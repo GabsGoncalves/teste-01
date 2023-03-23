@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--Indica o uso da versão 5 da linguagem HTML-->
+<html lang="pt-br">
+<!--Indica que a página será em português-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--Para aparecer acentuação-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para exibir o site em mobile usando 100% da tela>-->
+    <title>Gabriel Programador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=Shrikhand&family=Source+Serif+Pro:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        /*
+        Tudo o que está na style faz parte da linguagem css
+        */
+
+        /* 
+        Asterisco na programação significa TUDO, ou seja, para todas as margens usar comandos acima de margin para confecção do site
+        */
+
+        /*
+        Abrir chave e fechar chave me permite escrever no style e controlar nav e header
+        */
+        * {
+            margin: 0 auto
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            /* cONFIGURO VARIOS ELEMENTOS AO MESMO TEMPO, TIRAR O COMANDO DELS INDIVIDUALMENTE */
+            width: 90%
+        }
+
+        header {
+            height: 75px;
+            /* define a altura do header */
+            display: flex;
+            align-items: center;
+            /* Align itens só funciona no header e com o display flex, só consigo alinhar totalmente
+            no header e com esses comandos */
+        }
+
+        nav {
+            /* Define árena de menu com links de navegação, fica em baixo do header */
+            background-color: #C0C0C0;
+            border-end-end-radius: 25px;
+            /* Serve para arredondar a nav ou o header, arredondar. usar no site */
+            border-end-start-radius: 25px;
+            display: flex;
+            align-items: center;
+            height: 12vh;
+        }
+
+        header h1 {
+            /* Trouxe o h1 para editar por aqui usando CSS e chaves */
+            color: #252525;
+            font-size: 60px;
+            font-family: 'Source Serif Pro', serif;
+            /* Usar aspas simples quando a fonte precisar de mais de uma palavra */
+            text-shadow: 5px 5px 7.5px #505050;
+        }
+
+        main {
+            /* Main é o que fica abaixo do nav e do header, edito usando CSS e chaves da mesma forma que acima */
+            height: 700px;
+            margin-top: 10px;
+            /* Margens */
+            margin-bottom: 20px;
+            border: groove #336699 1px;
+            /* Criou uma borda envolta do elemento. a borda e criada alem dos 70% */
+            box-sizing: border-box;
+            /* Alinha o tamango da borda na largura da caixa ou elemento */
+            box-shadow: 5px 5px 10px grey;
+            /* Coloca uma sombra no elemento, o ultimo dade e a dispersao da luz */
+            display: flex;
+            /* Flexibiliza o elemento para ser dividido ou editavel */
+            flex-direction: column;
+            /* column = horizontal e row = vertical (separacao) */
+        }
+
+        main div#cx1 {
+            flex: 40%;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div#cx1 div {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        div#cx1 div p {
+            font-size: 22px;
+            margin-top: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #505050;
+        }
+
+        main div#cx2 {
+            flex: 20%;
+            /* Usar essas divs e por transparencia para estudo e teste */
+            background-color: grey;
+            margin: 5px;
+        }
+
+        main div#cx3 {
+            flex: 40%;
+            /* Significa todos do mesmo tamanho */
+            /* Usar essas divs e por transparencia para estudo e teste */
+            background-color: #25f369;
+            margin: 5px;
+        }
+
+        footer {
+            height: 150px;
+            background-color: gray;
+        }
+
+        div#cx1 div img {
+            width: 100%;
+        }
+
+        nav div {
+            background-color: transparent;
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav div a {
+            color: #000;
+            font-family: sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+        }
+
+        nav div a:hover {
+            color: #aa00ff;
+            background-color: #ededed;
+            box-shadow: 3px 3px 8px #8800ff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ETESP - Escola Tecnica</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="cursos.html">Cursos</a>
+            <a href="professores.html">Professores</a>
+            <a href="calendario.html">Calendário</a>
+            <a href="eventos.html">Eventos</a>
+        </div>
+    </nav>
+    <main>
+        <div id="cx1">
+            <div>
+                <a href="caneta.html">
+                    <img src="caneta dd.webp">
+                    <p>Caneta conceitual do Photopea muito loko</p>
+                </a>
+            </div>
+            <div>
+                <img src="alien mulhe.webp">
+                <p>Alien mulher é gravada do nada</p>
+            </div>
+            <div>
+                <img src="alien e carinha.webp">
+                <p>Alien é flagrado e deixa carinha impressionado que morre de susto</p>
+            </div>
+
+        </div>
+        <div id="cx2">
+
+        </div>
+        <div id="cx3">
+
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+
+<!--USAR O CHAT GPT PARA ESTUDO DE LÓGICA, BD, PW, ESTUDAR PROGRAMAÇÃO-->
+<!--Usar o google fonts para pegar fonts para usar na confeccao dos sites-->
